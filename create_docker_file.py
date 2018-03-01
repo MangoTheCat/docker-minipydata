@@ -12,7 +12,7 @@ import sys
 from logzero import logger
 
 # Key Variables
-ANACONDA_VERSION = '5.0.1'
+ANACONDA_VERSION = '5.1.0'
 PYTHON_VERSION = '3.6'
 LATEST_URL = 'https://docs.anaconda.com/anaconda/packages/py3.6_linux-64'
 
