@@ -2,6 +2,7 @@
 FROM mangothecat/minicondabuild:latest
 
 RUN conda install -y \
+        flake8=3.5.0 \
         matplotlib=2.1.2 \
         openpyxl=2.4.10 \
         pandas=0.22.0 \
