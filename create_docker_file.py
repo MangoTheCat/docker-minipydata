@@ -1,4 +1,4 @@
-""" Script to create docker file from dependencies in a version of anaconda distribution 
+""" Script to create docker file from dependencies in a version of anaconda distribution
 
 Usage:
     python create_docker_file.py path/to/output/Dockerfile
@@ -32,14 +32,15 @@ packages = [
 ]
 
 url_template = (
-    'https://docs.anaconda.com/anaconda/packages/old-pkg-lists/{ANACONDA_VERSION}/py{PYTHON_VERSION}_linux-64'
+    'https://docs.anaconda.com/anaconda/packages/old-pkg-lists/{ANACONDA_VERSION}/py{PYTHON_VERSION}_linux-64'  # noqa
 )
 url = url_template.format(ANACONDA_VERSION=ANACONDA_VERSION, PYTHON_VERSION=PYTHON_VERSION)
 response = requests.get(url)
 
 if not response.ok:
     logger.warning(
-        'Version {} of Anaconda not found, defaulting to latest version.'.format(ANACONDA_VERSION))
+        'Version {} of Anaconda not found, defaulting to latest version.'.format(ANACONDA_VERSION)
+    )
     url = LATEST_URL
 
 # Scrape Data
