@@ -11,5 +11,6 @@ RUN conda install -y \
         pytest \
         pytest-cov \
         setuptools_scm \
+        flake8 \
     && conda uninstall --force -y qt pyqt \
     && conda clean --all
