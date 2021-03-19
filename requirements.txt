@@ -1,7 +1,7 @@
 certifi==2018.10.15
 chardet==3.0.4
 idna==2.7
-Jinja2==2.10
+Jinja2==2.11.3
 logzero==1.5.0
 lxml==4.2.5
 MarkupSafe==1.1.0
